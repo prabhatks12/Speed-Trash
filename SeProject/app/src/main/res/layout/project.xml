@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:background="#0D0E0E">
+   <ScrollView
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+       <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Our Project !!"
+        android:textColor="#ffff"
+        android:textSize="45dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+
+           />
+
+       <TextView
+           android:layout_width="wrap_content"
+           android:textColor="#ffff"
+           android:layout_height="wrap_content"
+           android:textSize="25dp"
+           android:layout_marginTop="15dp"
+           android:text="To counter the problem of traffic violation many technologies had
+been introduced by several developers."
+           android:layout_marginLeft="10dp"
+           android:layout_marginRight="10dp"
+
+           />
+        <TextView
+            android:layout_width="wrap_content"
+            android:textColor="#ffff"
+            android:layout_height="wrap_content"
+            android:textSize="25dp"
+            android:layout_marginTop="15dp"
+            android:text="In view of their efforts we try to
+implement a small app which can help to avoid these traffic violation by making the drivers alert about the speed limits of the respective tracks they are on."
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:textColor="#ffff"
+            android:layout_height="wrap_content"
+            android:textSize="25dp"
+            android:layout_marginTop="15dp"
+            android:text="Our app will help the driver in
+following the speed limits of some main highways using advanced technologies such as GPS and google maps"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+
+
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Image Reference :http://wallpoper.com/wallpaper/speed-meter-18352 \n\n Icon Reference :https://www.iconfinder.com/icons/665649/dashboard_magnifier_optimization_performance_search_seo_speedometer_icon"
+            android:textColor="#ffff"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:textSize="25dp"
+            android:layout_marginTop="50dp" />
+
+
+
+    </LinearLayout>
+   </ScrollView>
+</RelativeLayout>

@@ -1,0 +1,63 @@
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <TextView
+        android:id="@+id/sppedlimit"
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Speed Limit = 50 kmph"
+        android:textSize="25dp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/urspeed"
+        android:weightSum="10"
+        android:layout_below="@+id/sppedlimit"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:id="@+id/urspeedtext"
+            android:textStyle="bold"
+            android:layout_weight="6"
+            android:layout_height="wrap_content"
+            android:text="Your Speed : "
+            android:textSize="25dp"
+
+        />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" 0.0 "
+            android:textStyle="bold"
+            android:textColor="@android:color/holo_red_dark"
+            android:id="@+id/change"
+            android:layout_weight="2"
+            android:textSize="25dp"
+            />
+        <TextView
+            android:layout_weight="2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="kmph"
+            android:textStyle="bold"
+            android:textSize="25dp"
+            />
+
+    </LinearLayout>
+<fragment xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/map"
+    android:layout_below="@+id/urspeed"
+    android:name="com.google.android.gms.maps.SupportMapFragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.prabhat.seproject.MapsActivity" />
+
+
+</RelativeLayout>

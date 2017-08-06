@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0D0E0E"
+    tools:context="com.example.prabhat.seproject.MainActivity">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="Speed Trash"
+        android:id="@+id/spedtr"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="50dp"
+        android:textStyle="bold"
+        android:typeface="serif" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/spedtr"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="Speed Limit = 50 kmph"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/speed"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="180dp"
+        android:ems="10"
+        android:gravity="center"
+        android:inputType="textPersonName"
+        android:text="0.0 "
+        android:textColor="@android:color/holo_blue_bright"
+        android:textSize="100dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/speed"
+        android:gravity="end"
+        android:text="kmph "
+        android:textColor="@android:color/holo_blue_bright"
+        android:textSize="50dp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/speed"
+        android:gravity="bottom"
+        android:orientation="horizontal"
+        android:weightSum="9">
+
+        <Button
+            android:id="@+id/Map"
+            android:layout_width="150dp"
+            android:layout_height="75dp"
+            android:textStyle="bold"
+            android:layout_below="@+id/speed"
+            android:layout_centerHorizontal="true"
+            android:layout_weight="3"
+            android:onClick="onMap"
+            android:background="@android:color/holo_blue_dark"
+            android:text="Map"
+            android:textSize="20dp" />
+
+        <Button
+            android:id="@+id/Project"
+            android:layout_width="150dp"
+            android:layout_height="75dp"
+            android:textStyle="bold"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/speed"
+            android:layout_weight="3"
+            android:background="@android:color/holo_blue_dark"
+            android:text="Project"
+            android:onClick="onProject"
+            android:textSize="20dp" />
+
+        <Button
+            android:id="@+id/Aboutus"
+            android:layout_width="150dp"
+            android:layout_height="75dp"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/speed"
+            android:layout_weight="3"
+            android:onClick="onAbout"
+            android:background="@android:color/holo_blue_dark"
+            android:text="About us"
+            android:textStyle="bold"
+            android:textSize="20dp" />
+
+    </LinearLayout>
+
+</RelativeLayout>
